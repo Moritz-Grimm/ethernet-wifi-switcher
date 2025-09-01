@@ -1,4 +1,4 @@
-# Ethernet-Wi-Fi-Switcher
+# ethernet-wifi-switcher
 
 ## Overview
 
