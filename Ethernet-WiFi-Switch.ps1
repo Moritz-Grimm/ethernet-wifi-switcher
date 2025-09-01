@@ -1,6 +1,6 @@
 # Config
 $ethernetName = "Ethernet"
-$wifiName = "WLAN"
+$wifiName = "WIFI"
 $hotspotSSID = "Your Hotspot/Wi-Fi Name"
 $maxAttempts = 10   # Connection attempts before giving up 
 $timeoutInSeconds = 3   # Timeout if the connection refuses
@@ -220,7 +220,7 @@ if (-not (Test-AdminRights)) {
     exit 1
 }
 
-Write-Host "=== Netzwerk-Switching Script started ===" -ForegroundColor Cyan
+Write-Host "=== Network-Switching Script started ===" -ForegroundColor Cyan
 Write-Host "LAN-Adapter: $ethernetName" -ForegroundColor Gray
 Write-Host "Wi-Fi adapter: $wifiName" -ForegroundColor Gray
 Write-Host "Hotspot-SSID: $hotspotSSID" -ForegroundColor Gray

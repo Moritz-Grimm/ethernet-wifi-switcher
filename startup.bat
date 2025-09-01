@@ -10,7 +10,7 @@ if %errorlevel% neq 0 (
 )
 
 echo Starting PowerShell script with admin rights...
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%BASEDIR%./Ethernet-WLAN-Switch.ps1"
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "%BASEDIR%./Ethernet-WiFi-Switch.ps1"
 
 if errorlevel 1 (
     echo Error occurred! Press any key to exit....
