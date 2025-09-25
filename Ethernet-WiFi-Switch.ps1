@@ -143,7 +143,7 @@ function Connect-Hotspot {
         try {
             $result = netsh wlan connect name="$hotspotSSID" 2>&1
             if ($LASTEXITCODE -ne 0) {
-                Write-Host "Netsh-Befehl failed: $result" -ForegroundColor Yellow
+                Write-Host "Netsh command failed: $result" -ForegroundColor Yellow
             }
         }
         catch {
@@ -153,7 +153,7 @@ function Connect-Hotspot {
         Start-Sleep -Seconds 5
 
         if (Is-WifiConnected) {
-            Write-Host "Wfi-Fi connected via Hotspot." -ForegroundColor Green
+            Write-Host "Wifi-Fi connected via Hotspot." -ForegroundColor Green
             Write-Host ""
             return $true
         }
