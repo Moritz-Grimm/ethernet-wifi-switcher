@@ -16,7 +16,7 @@ function Test-AdminRights {
 function Wait-ForInternetConnection {
     param (
         [int]$maxWaitSeconds = 30,
-        [int]$checkInterval = 2
+        [int]$checkInterval = 5
     )
     
     $waited = 0
